@@ -1,0 +1,52 @@
+.checkoutSuggestion {
+    align-items: center;
+    border: 1px solid $color-greyMedium;
+    border-radius: $global-radius;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: spacing("single") 0 0 0;
+    padding: spacing("single");
+    width: 100%;
+
+    @include breakpoint("medium") {
+        flex-direction: row;
+    }
+}
+
+.checkoutSuggestion-message {
+    font-weight: 400;
+    margin: 0 0 spacing("single") 0;
+    width: 100%;
+
+    @include breakpoint("medium") {
+        margin: 0 spacing("single") 0 0;
+        width: auto;
+    }
+}
+
+.checkoutSuggestion-button {
+    margin: 0;
+    text-transform: initial;
+    white-space: nowrap;
+    width: 100%;
+
+    @include breakpoint("medium") {
+        width: auto;
+    }
+
+    &--bolt {
+        background-color: #006cff;
+
+        &:hover {
+            background-color: #005ad5;
+        }
+    }
+}
+
+.checkoutSuggestion-button-icon {
+    &--bolt {
+        height: 1rem;
+        margin-right: spacing("quarter");
+    }
+}
