@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.161.1-alpha.1629890417669](https://github.com/bigcommerce/checkout-js/compare/v1.161.0...v1.161.1-alpha.1629890417669) (2021-08-25)
+
+
+### Features
+
+* **payment:** BOLT-19 added Bolt Embedded One Click Checkout implementation ([97be7f0](https://github.com/bigcommerce/checkout-js/commit/97be7f052fc7799894d1f17cc846ea048a5d5627))
+
 ## [1.161.0](https://github.com/bigcommerce/checkout-js/compare/v1.160.7...v1.161.0) (2021-08-11)
 
 
