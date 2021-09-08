@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.165.2-alpha.1631087752955](https://github.com/bigcommerce/checkout-js/compare/v1.161.3...v1.165.2-alpha.1631087752955) (2021-09-08)
+
+
+### Features
+
+* **payment:** BOLT-19 added Bolt Embedded One Click Checkout implementation and new generic CheckoutSuggestion component ([1f14515](https://github.com/bigcommerce/checkout-js/commit/1f14515b74b282589419986a2a52673ec80e61f9))
+* **payment:** BOLT-23 added custom embedded credit card fields as Bolt payment method ([edd0ad4](https://github.com/bigcommerce/checkout-js/commit/edd0ad40d4cf352b610179c49da9a99ed1aa7ded))
+* **payment:** BOLT-24 added Bolt account creation checkbox into BoltEmbeddedPaymentMethod component ([cebbc69](https://github.com/bigcommerce/checkout-js/commit/cebbc69561bdcea4c7ff0f10d11ad32dad3470b3))
+* **payment:** INT-3946 added locale from browser on masterpass SRC ([36793ec](https://github.com/bigcommerce/checkout-js/commit/36793ecc5e477418752b8098d92a38f3d94965fc))
+* **payment:** INT-4660 button text update on Checkout for Klarna ([940b42a](https://github.com/bigcommerce/checkout-js/commit/940b42a299338a5c0d85b998a375505becda5dba))
+* **payment:** INT-4771 modifying other lang files ([740c9d6](https://github.com/bigcommerce/checkout-js/commit/740c9d6947aeb5ceeb77b2b94725bb81cbfdeb38))
+* **payment:** INT-4771 updating quadpay name to zip ([814296f](https://github.com/bigcommerce/checkout-js/commit/814296f5e577eec2d26f6edad8c9ec29a04b5754))
+* **payment:** INT-4809 Remove compliance section in Drop-in ([bafb704](https://github.com/bigcommerce/checkout-js/commit/bafb704159fa303aad05c0983cc05079b0a1ed1e))
+
+
+### Bug Fixes
+
+* **checkout:** CHECKOUT-5980 invalid aria-labelledby values ([#682](https://github.com/bigcommerce/checkout-js/issues/682)) ([941e1c2](https://github.com/bigcommerce/checkout-js/commit/941e1c2b8338433274801fd0a9fd75331f032471))
+* **checkout:** PAYPAL-1118 removed unnecessary collapsing of checkout list elements for APMs without widget ([b58ddfb](https://github.com/bigcommerce/checkout-js/commit/b58ddfbc1b31b4e5fc3673b7a82c999e2910cfc9))
+* **payment:** INT-3946 removed nested if condition ([7e61a08](https://github.com/bigcommerce/checkout-js/commit/7e61a085e13cdbf54cc37a3ae2da9cf0df596881))
+* **payment:** INT-3946 store profile locale with no validation ([331c6cf](https://github.com/bigcommerce/checkout-js/commit/331c6cfd3d92bd130f340813774f88fac5fdc902))
+* **payment:** INT-3946 using supported locales on masterpass SRC ([509604c](https://github.com/bigcommerce/checkout-js/commit/509604c8bf48311f1b245a49bfad0a4026024b35))
+* **payment:** INT-3946 using supported locales on masterpass SRC ([564c84e](https://github.com/bigcommerce/checkout-js/commit/564c84eaf357a57a878529cbc3647a40e5e50640))
+* **payment:** INT-3946 using supported locales on masterpass SRC ([9eb60ea](https://github.com/bigcommerce/checkout-js/commit/9eb60ea2f7c304fc9d68bef2075e395ec29fd8a3))
+* **payment:** INT-3946 using supported locales on masterpass SRC ([8944a01](https://github.com/bigcommerce/checkout-js/commit/8944a0124233fe29f979765c0ea27e485ae9731d))
+* **payment:** PAYMENTS-7214 fix PPSDK initialisation strategy casing ([#669](https://github.com/bigcommerce/checkout-js/issues/669)) ([1e60c15](https://github.com/bigcommerce/checkout-js/commit/1e60c152daf215b5802e8357c5824b2afd9221a0))
+* **payment:** PAYMENTS-7221 bump checkout-sdk ([#681](https://github.com/bigcommerce/checkout-js/issues/681)) ([3844114](https://github.com/bigcommerce/checkout-js/commit/3844114a23559051fd65db5095356aef02584730))
+
 ### [1.165.1](https://github.com/bigcommerce/checkout-js/compare/v1.165.0...v1.165.1) (2021-09-08)
 
 ## [1.165.0](https://github.com/bigcommerce/checkout-js/compare/v1.164.0...v1.165.0) (2021-09-08)
