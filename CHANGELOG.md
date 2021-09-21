@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.167.1-alpha.1632208475915](https://github.com/bigcommerce/checkout-js/compare/v1.167.0...v1.167.1-alpha.1632208475915) (2021-09-21)
+
+
+### Features
+
+* **payment:** INT-4828 Adding custom error message for all dropin error ([3f6e42d](https://github.com/bigcommerce/checkout-js/commit/3f6e42d071c35ca22d7c9b21bfb5d4883b4e5c23))
+
+
+### Bug Fixes
+
+* **payment:** BOLT-54 fixed an issue with customer strategy deinitialisation ([4522f7f](https://github.com/bigcommerce/checkout-js/commit/4522f7f795d1cbc003f358aecd2fae741722c9e9))
+
 ## [1.167.0](https://github.com/bigcommerce/checkout-js/compare/v1.166.0...v1.167.0) (2021-09-14)
 
 
