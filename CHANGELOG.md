@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.176.3-alpha.1634730455727](https://github.com/bigcommerce/checkout-js/compare/v1.168.0...v1.176.3-alpha.1634730455727) (2021-10-20)
+
+
+### Features
+
+* **checkout:** CHECKOUT-6032 Assert error banners on checkout page ([#708](https://github.com/bigcommerce/checkout-js/issues/708)) ([8e25f9a](https://github.com/bigcommerce/checkout-js/commit/8e25f9a6117653db5a0fe3cd928c2abca781c1ba))
+* **checkout:** CHECKOUT-6050 payment method icons accessibility improvement ([#705](https://github.com/bigcommerce/checkout-js/issues/705)) ([498003a](https://github.com/bigcommerce/checkout-js/commit/498003a406267f81b60ec4e03b185659082c868a))
+* **payment:** BOLT-69 set create_account checkbox checked by default for Bolt Embedded payment form ([d79df83](https://github.com/bigcommerce/checkout-js/commit/d79df83e0d484b51b1a99e8efde18edcd43da334))
+* **payment:** INT-4170 Mount hostedfields for TSV on StripeV3 ([406e76f](https://github.com/bigcommerce/checkout-js/commit/406e76f84b3dc7dab597ae8ac6e95718b70f833d))
+* **payment:** INT-4631 Add Openpay payment method ([54b29f8](https://github.com/bigcommerce/checkout-js/commit/54b29f8dd2c9e78ee7a34e2a353f431797696162))
+* **payment:** INT-4836 Openpay: New logo on checkout page ([0e3eeaa](https://github.com/bigcommerce/checkout-js/commit/0e3eeaafcb36c175140451f59f3c60d808cebcd9))
+* **payment:** PAYPAL-1103 bump checkout-sdk-js ([9f48587](https://github.com/bigcommerce/checkout-js/commit/9f4858753e85c59055783eae8f8ec4869f287071))
+* **payment:** PAYPAL-1180 bump checkout-sdk-js version ([c8011a6](https://github.com/bigcommerce/checkout-js/commit/c8011a6b51948641595803af842448aaaf8ffa78))
+* **payment:** PAYPAL-972 bump checkout js ([422dbb5](https://github.com/bigcommerce/checkout-js/commit/422dbb51bb3cf38c6f977ce50e46e31f8495f7f4))
+
+
+### Bug Fixes
+
+* **checkout:** CHECKOUT-5823 Add label attribute for screen readers on coupon/gift certificate input field in cart summary at checkout ([ce08fb7](https://github.com/bigcommerce/checkout-js/commit/ce08fb73c54fee08a8c96bfdbe725cbb3737b1e0))
+* **checkout:** CHECKOUT-5928 Shopper cannot switch back to use single shipping address in checkout ([#700](https://github.com/bigcommerce/checkout-js/issues/700)) ([61b510d](https://github.com/bigcommerce/checkout-js/commit/61b510db90adeaf1f29171da012383fb0237fc26))
+* **checkout:** CHECKOUT-5961 Screen reader does not announce error messages and order confirmation messages during checkout ([b6912bb](https://github.com/bigcommerce/checkout-js/commit/b6912bb946237b7222f69b40174155d7862f0b50))
+* **checkout:** CHECKOUT-6030 remove child items from checkout address entry ([#724](https://github.com/bigcommerce/checkout-js/issues/724)) ([ba452e2](https://github.com/bigcommerce/checkout-js/commit/ba452e2c76454755b14f273b30ab34105bac5a8b))
+* **checkout:** CHECKOUT-6081 display form field default value as placeholder ([#729](https://github.com/bigcommerce/checkout-js/issues/729)) ([4eee719](https://github.com/bigcommerce/checkout-js/commit/4eee7198f4f1a66abd9e368202910900fc4327ec))
+* **payment:** BOLT-54 fixed an issue with customer strategy deinitialisation ([4522f7f](https://github.com/bigcommerce/checkout-js/commit/4522f7f795d1cbc003f358aecd2fae741722c9e9))
+* **payment:** BOLT-60 fixed an issue with checkout step header with big font-size ([dc0670c](https://github.com/bigcommerce/checkout-js/commit/dc0670cdc375341f1863798e32162a8bcc340ae2))
+* **payment:** BOLT-70 fixed Bolt Embedded Execution error after submit ([c0ce33a](https://github.com/bigcommerce/checkout-js/commit/c0ce33ab32dfb3771fd99cb6b073c619a6e718f0))
+* **payment:** INT-4489 cko add method supported 'card' ([4f613f4](https://github.com/bigcommerce/checkout-js/commit/4f613f4c488205ec9acd7f6f8ad4c852d864c890))
+* **payment:** INT-4900 bump version sdk ([1f9fbd2](https://github.com/bigcommerce/checkout-js/commit/1f9fbd2e1c94f703a358f3727d4a608227eec1cf))
+
 ### [1.176.2](https://github.com/bigcommerce/checkout-js/compare/v1.176.1...v1.176.2) (2021-10-18)
 
 
