@@ -1,26 +1,29 @@
 {
   "version": 2,
-  "appVersion": "1.224.1",
+  "appVersion": "1.225.0",
   "dynamicChunks": {
     "js": [
-      "311-47443b31.js",
-      "37-c9958705.js",
-      "65-d79b1c1f.js",
+      "311-08cb0d06.js",
+      "319-2bdb9af2.js",
+      "327-91c788f3.js",
+      "37-754a89e5.js",
+      "65-97c08221.js",
       "850-6ddbf896.js",
-      "904-d483b6f3.js",
       "961-78c79762.js",
-      "billing-2b81e074.js",
-      "cart-summary-drawer-c3cf6e2f.js",
-      "cart-summary-ab7297e2.js",
-      "customer-5112e7e6.js",
+      "999-85448444.js",
+      "billing-3744db1d.js",
+      "cart-summary-drawer-f2650355.js",
+      "cart-summary-da134b0a.js",
+      "customer-b43b069d.js",
       "order-summary-drawer-2705287f.js",
       "order-summary-7e116cec.js",
-      "payment-fac8032c.js",
-      "shipping-c78c2ae5.js"
+      "payment-244ba115.js",
+      "shipping-c2af758d.js"
     ],
     "LICENSE": [
-      "375-2f5f5e89.js.LICENSE",
-      "41-57c38e3b.js.LICENSE",
+      "327-91c788f3.js.LICENSE",
+      "757-e7953b0e.js.LICENSE",
+      "806-98897929.js.LICENSE",
       "961-78c79762.js.LICENSE"
     ],
     "css": [
@@ -39,12 +42,12 @@
     ]
   },
   "js": [
-    "runtime-cd09a241.js",
-    "605-6bee0bce.js",
-    "375-2f5f5e89.js",
-    "35-3708ed88.js",
-    "41-57c38e3b.js",
-    "checkout-8c983fa1.js"
+    "runtime-85c686cf.js",
+    "35-7efbd534.js",
+    "757-e7953b0e.js",
+    "749-aba3b6b5.js",
+    "806-98897929.js",
+    "checkout-715c1ae0.js"
   ],
   "css": [
     "checkout-5a382f28.css"
