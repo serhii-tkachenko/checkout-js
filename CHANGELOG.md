@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.338.2-prerelease.1688742170602](https://github.com/bigcommerce/checkout-js/compare/v1.333.0...v1.338.2-prerelease.1688742170602) (2023-07-07)
+
+
+### Features
+
+* **checkout:** CHECKOUT-7534 Display fees ([b833346](https://github.com/bigcommerce/checkout-js/commit/b833346167aa8b8ac28358d06b061275cb831845))
+* **checkout:** CHECKOUT-7534 update test ([00a17f2](https://github.com/bigcommerce/checkout-js/commit/00a17f2efd9f0f03c664bcb5e457ceb829d502fe))
+* **checkout:** PI-168 bluesnapdirect APMs ([0ba7636](https://github.com/bigcommerce/checkout-js/commit/0ba7636495c64b4d24f1265bc229c9385bb1f4f7))
+* **other:** LOCAL-1444 delivery translation ([#1351](https://github.com/bigcommerce/checkout-js/issues/1351)) ([f9619bd](https://github.com/bigcommerce/checkout-js/commit/f9619bd810b92db993571b37dd15293dfc303607))
+* **payment:** PAYPAL-000 added braintree ach vaulting instrument confirmation description text translation ([#1362](https://github.com/bigcommerce/checkout-js/issues/1362)) ([c99394b](https://github.com/bigcommerce/checkout-js/commit/c99394bf67543a14c536f9f3e92e2e019b989d45))
+* **payment:** PAYPAL-2690 added braintree ach vaulting instrument confirmation feature ([#1360](https://github.com/bigcommerce/checkout-js/issues/1360)) ([f1fb4d2](https://github.com/bigcommerce/checkout-js/commit/f1fb4d233420c16c8ff7fa6b02a22da31a1c5e72))
+
+
+### Bug Fixes
+
+* **checkout:** PI-00 fix pending promise for bluesnapdirect APMs iframe ([274cde8](https://github.com/bigcommerce/checkout-js/commit/274cde8f989d364e95b1848165e2983c76766b39))
+
+
+### Code Refactoring
+
+* **payment:** PAYPAL-000 updated getBraintreeAchPaymentMethod method in test-utils package ([#1361](https://github.com/bigcommerce/checkout-js/issues/1361)) ([cee6813](https://github.com/bigcommerce/checkout-js/commit/cee68130d3521c02b4d212b4eebe01bf3b957f9f))
+
 ### [1.338.1](https://github.com/bigcommerce/checkout-js/compare/v1.338.0...v1.338.1) (2023-07-06)
 
 
