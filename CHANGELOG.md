@@ -2,6 +2,40 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.346.1-prerelease.1690377395088](https://github.com/bigcommerce/checkout-js/compare/v1.333.0...v1.346.1-prerelease.1690377395088) (2023-07-26)
+
+
+### Features
+
+* **checkout:** CHECKOUT-7534 Display fees ([b833346](https://github.com/bigcommerce/checkout-js/commit/b833346167aa8b8ac28358d06b061275cb831845))
+* **checkout:** CHECKOUT-7534 update test ([00a17f2](https://github.com/bigcommerce/checkout-js/commit/00a17f2efd9f0f03c664bcb5e457ceb829d502fe))
+* **checkout:** PI-168 bluesnapdirect APMs ([0ba7636](https://github.com/bigcommerce/checkout-js/commit/0ba7636495c64b4d24f1265bc229c9385bb1f4f7))
+* **checkout:** PI-287 hide cvv validation field for specific providers ([56b1195](https://github.com/bigcommerce/checkout-js/commit/56b11950b847c231da3e61a9669af6dfc1f58517))
+* **order:** ORDERS-5715 adds support for order fees on the order confirmation page ([#1385](https://github.com/bigcommerce/checkout-js/issues/1385)) ([3802c46](https://github.com/bigcommerce/checkout-js/commit/3802c46ce6b99804123d8d3fdc694ea33b7010e8))
+* **other:** LOCAL-1444 delivery translation ([#1351](https://github.com/bigcommerce/checkout-js/issues/1351)) ([f9619bd](https://github.com/bigcommerce/checkout-js/commit/f9619bd810b92db993571b37dd15293dfc303607))
+* **other:** LOCAL-1444 delivery translation ([#1389](https://github.com/bigcommerce/checkout-js/issues/1389)) ([b1f51f7](https://github.com/bigcommerce/checkout-js/commit/b1f51f7025f9ce9abca8f787361c880bf26494f6))
+* **payment:** PAYPAL-000 added braintree ach vaulting instrument confirmation description text translation ([#1362](https://github.com/bigcommerce/checkout-js/issues/1362)) ([c99394b](https://github.com/bigcommerce/checkout-js/commit/c99394bf67543a14c536f9f3e92e2e019b989d45))
+* **payment:** PAYPAL-2690 added braintree ach vaulting instrument confirmation feature ([#1360](https://github.com/bigcommerce/checkout-js/issues/1360)) ([f1fb4d2](https://github.com/bigcommerce/checkout-js/commit/f1fb4d233420c16c8ff7fa6b02a22da31a1c5e72))
+* **payment:** PAYPAL-2726 added BraintreeAcceleratedCheckout payment method ([#1386](https://github.com/bigcommerce/checkout-js/issues/1386)) ([af67fb0](https://github.com/bigcommerce/checkout-js/commit/af67fb0800eb008a1894726f4f881ad7cf545d03))
+* **payment:** PAYPAL-2744 bump checkout-sdk-js version ([b1dcf09](https://github.com/bigcommerce/checkout-js/commit/b1dcf09cfe600c697db713224060d4a6b0b02fbd))
+* **payment:** PAYPAL-2752 show/hide wallet buttons depends on isPaymentDataRequired ([#1383](https://github.com/bigcommerce/checkout-js/issues/1383)) ([8c59574](https://github.com/bigcommerce/checkout-js/commit/8c5957418139ad7ccb7b4fcbfc0eff41a5559f24))
+* **payment:** PI-175 [Stripe] Guest Customers able to checkout witho… ([#1350](https://github.com/bigcommerce/checkout-js/issues/1350)) ([8be3c3a](https://github.com/bigcommerce/checkout-js/commit/8be3c3ab665b07fdae833945aad23109f89220f9))
+* **payment:** PI-502 Fortis package ([1072199](https://github.com/bigcommerce/checkout-js/commit/107219907885ca18e1145b6219e18ae854aab12d))
+* **payment:** PI-502 revert Fortis package ([0f9b113](https://github.com/bigcommerce/checkout-js/commit/0f9b1139b7c5125c48cd08cb572698dc7f3dd668))
+
+
+### Bug Fixes
+
+* **checkout:** PI-00 fix pending promise for bluesnapdirect APMs iframe ([274cde8](https://github.com/bigcommerce/checkout-js/commit/274cde8f989d364e95b1848165e2983c76766b39))
+* **payment:** CHECKOUT-6967 Fix issue with icon not highlighting for stored instruments ([#1388](https://github.com/bigcommerce/checkout-js/issues/1388)) ([40eed90](https://github.com/bigcommerce/checkout-js/commit/40eed90379d95ab7bc5d826f031577eafb47721c))
+* **payment:** PAYPAL-2595 PayPal button shows on store credit ([#1349](https://github.com/bigcommerce/checkout-js/issues/1349)) ([542ef9c](https://github.com/bigcommerce/checkout-js/commit/542ef9ce77a158d231870f9c5ab9cb2309bcff5a))
+
+
+### Code Refactoring
+
+* **checkout:** PI-245 moved FormContext fully to the UI package ([dcf133b](https://github.com/bigcommerce/checkout-js/commit/dcf133bd8e3742d7b81acdec0f57abd610544fd2))
+* **payment:** PAYPAL-000 updated getBraintreeAchPaymentMethod method in test-utils package ([#1361](https://github.com/bigcommerce/checkout-js/issues/1361)) ([cee6813](https://github.com/bigcommerce/checkout-js/commit/cee68130d3521c02b4d212b4eebe01bf3b957f9f))
+
 ## [1.346.0](https://github.com/bigcommerce/checkout-js/compare/v1.345.1...v1.346.0) (2023-07-25)
 
 
