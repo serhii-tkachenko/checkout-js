@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.350.5-prerelease.1691417598126](https://github.com/bigcommerce/checkout-js/compare/v1.347.1...v1.350.5-prerelease.1691417598126) (2023-08-07)
+
+
+### Features
+
+* **payment:** PAYPAL-1545 added PaypalCommerce RatePay component ([d8053e5](https://github.com/bigcommerce/checkout-js/commit/d8053e52bb547c142a2a936c5950f35d3ce7cfde))
+* **payment:** PAYPAL-1545 added translation for PaypalCommerce RatePay payment component ([212d302](https://github.com/bigcommerce/checkout-js/commit/212d30226be584e0868434021e713580c58301fd))
+* **payment:** PAYPAL-1545 bump checkout-sdk-js version ([0d7194f](https://github.com/bigcommerce/checkout-js/commit/0d7194f7e63a1631741817dc52bd93893e0a7815))
+
+
+### Code Refactoring
+
+* **extension:** CHECKOUT-7634 Use latest extension SDK ([#1413](https://github.com/bigcommerce/checkout-js/issues/1413)) ([9dd4de1](https://github.com/bigcommerce/checkout-js/commit/9dd4de11051bc8d7e1dbbbef6070722495b4c85c))
+
 ### [1.350.4](https://github.com/bigcommerce/checkout-js/compare/v1.350.3...v1.350.4) (2023-08-04)
 
 
