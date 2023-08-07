@@ -193,7 +193,7 @@ class Customer extends Component<CustomerProps & WithCheckoutCustomerProps & Ana
           />;
 
         const isLoadingGuestForm = isWalletButtonsOnTop ?
-            isContinuingAsGuest :
+            isContinuingAsGuest || isExecutingPaymentMethodCheckout :
             isContinuingAsGuest || isInitializing || isExecutingPaymentMethodCheckout;
 
         return (
@@ -395,6 +395,10 @@ class Customer extends Component<CustomerProps & WithCheckoutCustomerProps & Ana
 
             this.draftEmail = undefined;
         } catch (error) {
+            if (isErrorWithType(error) && error.type === 'payment_method_client_invalid') {
+                await this.executePaymentMethodCheckoutOrContinue();
+            }
+
             if (
                 isErrorWithType(error) &&
                 (error.type === 'update_subscriptions' ||
@@ -479,7 +483,7 @@ class Customer extends Component<CustomerProps & WithCheckoutCustomerProps & Ana
         onChangeViewType(CustomerViewType.Login);
     };
 
-    private executePaymentMethodCheckoutOrContinue: () => void = async () => {
+    private executePaymentMethodCheckoutOrContinue: () => Promise<void> = async () => {
         const {
             executePaymentMethodCheckout,
             onContinueAsGuest = noop,

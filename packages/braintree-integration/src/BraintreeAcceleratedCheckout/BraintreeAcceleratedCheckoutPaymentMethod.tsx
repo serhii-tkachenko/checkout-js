@@ -1,22 +1,41 @@
-import React, { FunctionComponent, useEffect } from 'react';
+import React, { FunctionComponent, useEffect, useRef } from 'react';
 
+import { LocaleProvider } from '@bigcommerce/checkout/locale';
 import {
+    CheckoutContext,
+    PaymentFormContext,
     PaymentMethodProps,
     PaymentMethodResolveId,
     toResolvableComponent,
 } from '@bigcommerce/checkout/payment-integration-api';
+import { FormContext, LoadingOverlay } from '@bigcommerce/checkout/ui';
+
+import BraintreeAcceleratedCheckoutForm from './components/BraintreeAcceleratedCheckoutForm';
+
+interface PayPalConnectComponentRef {
+    render?: (container: string) => void,
+}
 
 const BraintreeAcceleratedCheckoutPaymentMethod: FunctionComponent<PaymentMethodProps> = ({
     method,
     checkoutService,
+    checkoutState,
     onUnhandledError,
+    paymentForm,
 }) => {
-    const initializePayment = async () => {
+    let paypalConnectComponentRef = useRef<PayPalConnectComponentRef>({});
+
+    const { isLoadingPaymentMethod, isInitializingPayment } = checkoutState.statuses;
+    const { isPaymentDataRequired } = checkoutState.data;
+
+    const initializePaymentOrThrow = async () => {
         try {
             await checkoutService.initializePayment({
                 methodId: method.id,
                 braintreeacceleratedcheckout: {
-                    container: '#braintree-axo-cc-form-container',
+                    onInit: (renderPayPalConnectComponentMethod) => {
+                        paypalConnectComponentRef.current.render = renderPayPalConnectComponentMethod;
+                    },
                 },
             });
         } catch (error) {
@@ -26,7 +45,7 @@ const BraintreeAcceleratedCheckoutPaymentMethod: FunctionComponent<PaymentMethod
         }
     };
 
-    const deinitializePayment = async () => {
+    const deinitializePaymentOrThrow = async () => {
         try {
             await checkoutService.deinitializePayment({
                 methodId: method.id,
@@ -39,17 +58,42 @@ const BraintreeAcceleratedCheckoutPaymentMethod: FunctionComponent<PaymentMethod
     };
 
     useEffect(() => {
-        void initializePayment();
+        if (isPaymentDataRequired()) {
+            void initializePaymentOrThrow();
+        }
 
         return () => {
-            void deinitializePayment();
+            if (isPaymentDataRequired()) {
+                void deinitializePaymentOrThrow();
+            }
         };
     }, []);
 
+    if (!isPaymentDataRequired()) {
+        return null;
+    }
+
+    const isLoading = isInitializingPayment() || isLoadingPaymentMethod(method.id);
+
+    const formContextProps = {
+        isSubmitted: paymentForm.isSubmitted(),
+        setSubmitted: paymentForm.setSubmitted,
+    };
+
     return (
-        <div>
-            <div id="braintree-axo-cc-form-container" />
-        </div>
+        <FormContext.Provider value={formContextProps}>
+            <CheckoutContext.Provider value={{ checkoutState, checkoutService }}>
+                <LocaleProvider checkoutService={checkoutService}>
+                    <PaymentFormContext.Provider value={{ paymentForm }}>
+                        <LoadingOverlay hideContentWhenLoading isLoading={isLoading}>
+                            <BraintreeAcceleratedCheckoutForm
+                                renderPayPalConnectComponent={paypalConnectComponentRef?.current?.render}
+                            />
+                        </LoadingOverlay>
+                    </PaymentFormContext.Provider>
+                </LocaleProvider>
+            </CheckoutContext.Provider>
+        </FormContext.Provider>
     );
 };
 
