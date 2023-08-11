@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.353.2-prerelease.1691757839482](https://github.com/bigcommerce/checkout-js/compare/v1.352.2...v1.353.2-prerelease.1691757839482) (2023-08-11)
+
+
+### Features
+
+* **payment:** PAYPAL-2732 PayPalAxo Shipping step ([8505b4d](https://github.com/bigcommerce/checkout-js/commit/8505b4df9c3d1ce0ac1d64f7d7d25183a73ed1a0))
+* **payment:** PAYPAL-2737 added vaulter instruments implementation to Braintree AXO payment method ([#1399](https://github.com/bigcommerce/checkout-js/issues/1399)) ([5d471d7](https://github.com/bigcommerce/checkout-js/commit/5d471d7372613ffab11cf5ec3fa4a634c0907c5d))
+
+
+### Bug Fixes
+
+* **checkout:** CHECKOUT-7150 aria-expanded property does not toggle based on the associated drop-down ([915bb81](https://github.com/bigcommerce/checkout-js/commit/915bb81bb066946e03f44defcbb5bed7e6fd4ebf))
+
 ### [1.353.1](https://github.com/bigcommerce/checkout-js/compare/v1.353.0...v1.353.1) (2023-08-10)
 
 

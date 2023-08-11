@@ -1,12 +1,12 @@
 {
   "name": "@bigcommerce/checkout",
-  "version": "1.353.1",
+  "version": "1.353.2-prerelease.1691757839482",
   "private": true,
   "description": "Browser-based application providing a seamless UI for BigCommerce shoppers to complete their checkout.",
   "license": "MIT",
   "engines": {
-    "node": "16",
-    "npm": "8"
+    "node": "18",
+    "npm": "9"
   },
   "scripts": {
     "preinstall": "npx check-node-version --package",
