@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "address-utils": "packages/address-utils",
     "afterpay-integration": "packages/afterpay-integration",
     "analytics": "packages/analytics",
     "apple-pay-integration": "packages/apple-pay-integration",
@@ -13,6 +14,7 @@
     "credit-card-integration": "packages/credit-card-integration",
     "dom-utils": "packages/dom-utils",
     "error-handling-utils": "packages/error-handling-utils",
+    "form-fields-utils": "packages/form-fields-utils",
     "google-pay-integration": "packages/google-pay-integration",
     "hosted-credit-card-integration": "packages/hosted-credit-card-integration",
     "hosted-dropin-integration": "packages/hosted-dropin-integration",
@@ -25,6 +27,7 @@
     "offline-payment-integration": "packages/offline-payment-integration",
     "payment-integration-api": "packages/payment-integration-api",
     "paypal-commerce-integration": "packages/paypal-commerce-integration",
+    "paypal-connect-integration": "packages/paypal-connect-integration",
     "sezzle-integration": "packages/sezzle-integration",
     "squarev2-integration": "packages/squarev2-integration",
     "test-framework": "packages/test-framework",

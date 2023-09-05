@@ -1,8 +1,6 @@
-import { useCheckout } from '@bigcommerce/checkout/payment-integration-api';
+import { PaymentMethodId, useCheckout } from '@bigcommerce/checkout/payment-integration-api';
 
-import { PaymentMethodId } from '../../payment/paymentMethod';
-
-import { isPayPalConnectAddress } from './utils';
+import isPayPalConnectAddress from './is-paypal-connect-address';
 
 const usePayPalConnectAddress = () => {
     const { checkoutState } = useCheckout();
@@ -15,7 +13,7 @@ const usePayPalConnectAddress = () => {
     const paypalConnectAddresses = getPaymentProviderCustomer()?.addresses || [];
     const bcAddresses = getCustomer()?.addresses || [];
 
-    const mergedBcAndPayPalConnectAddresses = isPayPalAxoEnabled 
+    const mergedBcAndPayPalConnectAddresses = isPayPalAxoEnabled
         ? [
             ...paypalConnectAddresses,
             ...bcAddresses.filter((address) => !isPayPalConnectAddress(address, paypalConnectAddresses))

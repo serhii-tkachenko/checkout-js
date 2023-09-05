@@ -5,10 +5,8 @@ import React from 'react';
 import * as PaymentIntegrationApi from '@bigcommerce/checkout/payment-integration-api';
 import { getAddress, getCustomer, getStoreConfig } from '@bigcommerce/checkout/test-utils';
 
-import { PaymentMethodId } from '../../payment/paymentMethod';
-
+import isPayPalConnectAddress from './is-paypal-connect-address';
 import usePayPalConnectAddress from './usePayPalConnectAddress';
-import { isPayPalConnectAddress } from './utils';
 
 interface PayPalAxoAddressComponentProps {
     selectedAddress: Address;
@@ -52,7 +50,7 @@ describe('usePayPalConnectAddress', () => {
     const useCheckoutMock = (
         paymentProviderCustomer: PaymentProviderCustomer,
         customerAddress?: CustomerAddress[],
-        providerWithCustomCheckout = PaymentMethodId.BraintreeAcceleratedCheckout,
+        providerWithCustomCheckout = PaymentIntegrationApi.PaymentMethodId.BraintreeAcceleratedCheckout,
     ) => {
         jest.spyOn(PaymentIntegrationApi, 'useCheckout').mockImplementation(
             jest.fn().mockImplementation(() => ({
@@ -75,7 +73,6 @@ describe('usePayPalConnectAddress', () => {
             }))
         );
     };
-
 
     const defaultAdderss = getAddress();
     const addressBC1 = {

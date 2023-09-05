@@ -17,8 +17,7 @@ import {
 import React from 'react';
 
 import { withLanguage, WithLanguageProps } from '@bigcommerce/checkout/locale';
-
-import { usePayPalConnectAddress } from '../address/PayPalAxo';
+import { usePayPalConnectAddress } from '@bigcommerce/checkout/paypal-connect-integration';
 
 import MultiShippingForm, { MultiShippingFormValues } from './MultiShippingForm';
 import SingleShippingForm, { SingleShippingFormValues } from './SingleShippingForm';

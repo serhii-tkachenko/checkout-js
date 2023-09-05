@@ -11,6 +11,11 @@ export { getConsignment } from './consignment.mock';
 export { getCoupon, getShippingCoupon } from './coupon.mock';
 export { getGuestCustomer, getCustomer } from './customers.mock';
 export {
+    getAddressFormFieldsWithCustomRequired,
+    getAddressFormFields,
+    getFormFields,
+} from './formField.mock';
+export {
     getAccountInstrument,
     getBankInstrument,
     getCardInstrument,
