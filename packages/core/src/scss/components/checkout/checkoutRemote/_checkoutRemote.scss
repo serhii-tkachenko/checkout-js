@@ -18,6 +18,12 @@
     > .AmazonPayContainer {
         width: remCalc(200px);
     }
+
+    .gpay-button {
+        border-radius: $global-radius;
+        height: $wallet-button-height;
+        min-height: $wallet-button-height;
+    }
 }
 
 #applepayCheckoutButton button,
