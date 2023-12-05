@@ -130,7 +130,7 @@ class Payment extends Component<
 
             const selectedMethod = this.state.selectedMethod || this.props.defaultMethod;
 
-            analyticsTracker.selectedPaymentMethod(selectedMethod?.config.displayName);
+            analyticsTracker.selectedPaymentMethod(selectedMethod?.config.displayName, selectedMethod?.id);
         } catch (error) {
             onUnhandledError(error);
         }
@@ -487,7 +487,7 @@ class Payment extends Component<
             return;
         }
 
-        analyticsTracker.selectedPaymentMethod(method?.config.displayName);
+        analyticsTracker.selectedPaymentMethod(method?.config.displayName, method?.id);
 
         this.setState({ selectedMethod: method });
     };
