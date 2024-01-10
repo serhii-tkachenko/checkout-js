@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.423.4-prerelease.1704882103539](https://github.com/bigcommerce/checkout-js/compare/v1.414.0...v1.423.4-prerelease.1704882103539) (2024-01-10)
+
+
+### Features
+
+* **other:** LOCAL-1444 delivery translation ([2f67ad9](https://github.com/bigcommerce/checkout-js/commit/2f67ad912a8844cc5af67f96809d3e6e608fcffc))
+* **other:** LOCAL-1444 delivery translation ([2092b5d](https://github.com/bigcommerce/checkout-js/commit/2092b5d0428112b3ac07de21eb89940c548c83f2))
+* **payment:** PAYPAL-2617 bump checkout-sdk version ([946ceb7](https://github.com/bigcommerce/checkout-js/commit/946ceb733b245931147bf32b2bded1194f01eaff))
+* **payment:** PAYPAL-3391 fixed ratepay fields layout ([76a4280](https://github.com/bigcommerce/checkout-js/commit/76a42800e7dd221bb9974adc5b9959b005a3a08a))
+* **payment:** PAYPAL-3403 added 'Change' translation ([22234d7](https://github.com/bigcommerce/checkout-js/commit/22234d79330ccb3f844899286492fba396bfa1fe))
+* **payment:** PAYPAL-3404 added isPayPalCommerceConnect method to paypal-connect-integration package ([b430613](https://github.com/bigcommerce/checkout-js/commit/b430613f1e5d303a2c1b490010e2aa2d45221c31))
+* **payment:** PAYPAL-3404 added PayPalCommerceAcceleratedCheckout to PaymentMethodID enum ([ff5514c](https://github.com/bigcommerce/checkout-js/commit/ff5514ce8a245ec7b12aca06dcc762729d577c23))
+* **payment:** PAYPAL-3404 updated some conditions to call customer execute method after sign in/up only for Braintree AXO in Customer component ([646a1c9](https://github.com/bigcommerce/checkout-js/commit/646a1c98b642009b34c6b8260d409d14ee2d4be0))
+* **payment:** PAYPAL-3405 added PayPalCommerceAcceleratedCheckout payment method ([ae2e696](https://github.com/bigcommerce/checkout-js/commit/ae2e6969ae9708eedd1fdab5ae89ed96dd8e49ba))
+* **payment:** PI-633 add stored cards component to square v2 payment method ([0aa1e4c](https://github.com/bigcommerce/checkout-js/commit/0aa1e4cbe2a611c084f633402a5638ff5d8158b1))
+* **payment:** PI-851 blusnap direct ideal component creation ([ad9c4e5](https://github.com/bigcommerce/checkout-js/commit/ad9c4e584277a2fb2b7c28535858d31ee1d760e6))
+* **payment:** PI-851 moved fields to separate folder ([c67fe4b](https://github.com/bigcommerce/checkout-js/commit/c67fe4ba919b0b6707e0a716842a299c9a183c68))
+
+
+### Bug Fixes
+
+* **payment:** PI-345 prevent actions with certificate while processing payment ([2145eea](https://github.com/bigcommerce/checkout-js/commit/2145eea4a6f13d58f457c0e72a955d99c7b9d55f))
+
+
+### Code Refactoring
+
+* **checkout:** CHECKOUT-7948 Wallet Buttons Auto Layout ([#1633](https://github.com/bigcommerce/checkout-js/issues/1633)) ([0deec45](https://github.com/bigcommerce/checkout-js/commit/0deec456b3504f061841c456db6379b6bf63d9b7))
+
 ### [1.423.3](https://github.com/bigcommerce/checkout-js/compare/v1.423.2...v1.423.3) (2024-01-10)
 
 ### [1.423.2](https://github.com/bigcommerce/checkout-js/compare/v1.423.1...v1.423.2) (2024-01-10)
