@@ -6,7 +6,7 @@ import { Button, ButtonSize, ButtonVariant, CreditCardIcon } from '@bigcommerce/
 import { TranslatedString } from '@bigcommerce/checkout/locale';
 import { PoweredByPayPalFastlaneLabel } from '@bigcommerce/checkout/paypal-fastlane-integration';
 
-import { BraintreeFastlaneComponentRef } from '../BraintreeAcceleratedCheckoutPaymentMethod';
+import { BraintreeFastlaneComponentRef } from '../BraintreeFastlanePaymentMethod';
 
 import './BraintreeFastlaneInstrumentsForm.scss';
 
@@ -28,9 +28,9 @@ function mapFromInstrumentCardType(type: string): string {
 }
 
 interface BraintreeFastlaneInstrumentsFormProps {
-    selectedInstrument: CardInstrument;
-    onChange: BraintreeFastlaneComponentRef['showPayPalCardSelector'];
     handleSelectInstrument(instrument: CardInstrument): void;
+    onChange: BraintreeFastlaneComponentRef['showPayPalCardSelector'];
+    selectedInstrument: CardInstrument;
 }
 
 const BraintreeFastlaneInstrumentsForm: FunctionComponent<

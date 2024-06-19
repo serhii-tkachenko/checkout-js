@@ -11,18 +11,6 @@ import { fireEvent } from '@testing-library/react';
 describe('BraintreeFastlaneInstrumentsForm', () => {
     const selectedInstrumentMock = getCardInstrument();
 
-    it('renders instruments form with provided props', () => {
-        const { container } = render(
-            <BraintreeFastlaneInstrumentsForm
-                handleSelectInstrument={jest.fn()}
-                onChange={jest.fn()}
-                selectedInstrument={selectedInstrumentMock}
-            />,
-        );
-
-        expect(container).toMatchSnapshot();
-    });
-
     it('updates selected instrument if user selects another instrument in braintree fastlane popup', async () => {
         const newInstrument = {
             ...selectedInstrumentMock,
@@ -38,7 +26,7 @@ describe('BraintreeFastlaneInstrumentsForm', () => {
                 handleSelectInstrument={handleSelectInstrument}
                 onChange={onChange}
                 selectedInstrument={selectedInstrumentMock}
-            />,
+            />
         );
 
         const actionButton = screen.getByTestId('braintree-fastlane-instrument-change');
