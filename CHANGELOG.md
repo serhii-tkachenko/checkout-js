@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.526.3-prerelease.1727191039671](https://github.com/bigcommerce/checkout-js/compare/v1.524.4...v1.526.3-prerelease.1727191039671) (2024-09-24)
+
+
+### Features
+
+* **other:** LOCAL-1444 delivery translation ([#2021](https://github.com/bigcommerce/checkout-js/issues/2021)) ([614d387](https://github.com/bigcommerce/checkout-js/commit/614d3878b8913d0111579219ef2528bf7489cb46))
+* **payment:** PI-1568 Write authorizenet and checkoutcom googlepay integration tests ([#2007](https://github.com/bigcommerce/checkout-js/issues/2007)) ([b4cde10](https://github.com/bigcommerce/checkout-js/commit/b4cde102cc45993009b436aecc30c224d117f4f0))
+
+
+### Bug Fixes
+
+* **checkout:** PI-2623 fixed submit payment for the Digital River ([213c1e9](https://github.com/bigcommerce/checkout-js/commit/213c1e989d25925a228a6a927d42d8b4988e51e9))
+* **checkout:** PI-2633 removed modal window that appears during the frictionless 3ds flow for Adyen ([df0aabc](https://github.com/bigcommerce/checkout-js/commit/df0aabcc9f0ea35ee7614d9c2babe9867a5c3818))
+* **payment:** PAYPAL-4646 fixed the issue with Google Pay button styling on top of checkout page ([b237121](https://github.com/bigcommerce/checkout-js/commit/b2371217bfdc924e2c4aa482e44e69dd729801aa))
+
+
+### Code Refactoring
+
+* **payment:** PAYPAL-4157 removed unnecessary Fastlane shipping strategy initialization ([393fda9](https://github.com/bigcommerce/checkout-js/commit/393fda942e2fa3ab521fdc8a5ade6b124437dcf9))
+
 ### [1.526.2](https://github.com/bigcommerce/checkout-js/compare/v1.526.1...v1.526.2) (2024-09-24)
 
 ### [1.526.1](https://github.com/bigcommerce/checkout-js/compare/v1.526.0...v1.526.1) (2024-09-24)
