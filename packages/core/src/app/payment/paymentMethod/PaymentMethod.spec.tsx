@@ -87,7 +87,7 @@ describe('PaymentMethod', () => {
         expect(defaultProps.onUnhandledError).toHaveBeenCalledWith(expect.any(Error));
     });
 
-    it('renders as hosted paypal payment method in Adyen v1', () => {
+    it('renders as hosted payment method in Adyen v1', () => {
         const method = {
             ...getPaymentMethod(),
             id: 'paypal',
@@ -158,48 +158,6 @@ describe('PaymentMethod', () => {
                 id: 'PAY_BY_INSTALLMENT',
                 gateway: PaymentMethodId.Afterpay,
                 type: PaymentMethodProviderType.Api,
-            };
-        });
-
-        it('renders as hosted payment method', () => {
-            const container = mount(<PaymentMethodTest {...defaultProps} method={method} />);
-
-            expect(container.find(HostedPaymentMethod).props()).toEqual(
-                expect.objectContaining({
-                    deinitializePayment: expect.any(Function),
-                    initializePayment: expect.any(Function),
-                    method,
-                }),
-            );
-        });
-
-        it('initializes method with required config', () => {
-            const container = mount(<PaymentMethodTest {...defaultProps} method={method} />);
-            const component: ReactWrapper<HostedPaymentMethodProps> =
-                container.find(HostedPaymentMethod);
-
-            component.prop('initializePayment')({
-                methodId: defaultProps.method.id,
-                gatewayId: defaultProps.method.gateway,
-            });
-
-            expect(checkoutService.initializePayment).toHaveBeenCalledWith(
-                expect.objectContaining({
-                    methodId: method.id,
-                    gatewayId: method.gateway,
-                }),
-            );
-        });
-    });
-
-    describe('when using PayPal payment', () => {
-        let method: PaymentMethod;
-
-        beforeEach(() => {
-            method = {
-                ...getPaymentMethod(),
-                id: 'paypalexpress',
-                method: 'paypal',
             };
         });
 
