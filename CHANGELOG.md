@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.587.4-prerelease.1747036107368](https://github.com/bigcommerce/checkout-js/compare/v1.581.1...v1.587.4-prerelease.1747036107368) (2025-05-12)
+
+
+### Features
+
+* **other:** LOCAL-1444 delivery translation ([#2277](https://github.com/bigcommerce/checkout-js/issues/2277)) ([e2dbd35](https://github.com/bigcommerce/checkout-js/commit/e2dbd35758332b7a7c673dd0b2179eb4d8767270))
+* **payment:** bump checkout-sdk ([9a12356](https://github.com/bigcommerce/checkout-js/commit/9a123569010efd242ce5417725fe3f8a73483daa))
+* **payment:** create container for Stripe OCS payment method ([948dc1f](https://github.com/bigcommerce/checkout-js/commit/948dc1f1fe4e7964154143b986ef9c8480390c8f))
+* **payment:** paypal-utils package ([68da552](https://github.com/bigcommerce/checkout-js/commit/68da5524dd681bb9843ab03405fd903fa81eb5ca))
+* **payment:** PI-3225 pass loadingContainerId to the GooglePay payment step ([60dd263](https://github.com/bigcommerce/checkout-js/commit/60dd26318d82358f7e8d87ea5aea2f311b009f09))
+* **payment:** README updates ([ef5a490](https://github.com/bigcommerce/checkout-js/commit/ef5a490529cccf59ba722c18998915352b04a3f8))
+* **payment:** removed unnecessary files ([24c66a0](https://github.com/bigcommerce/checkout-js/commit/24c66a0509c36a4e0ab1eef3a189a0f40b4dc63e))
+* **payment:** Stripe OCS accordion element styling ([48ac1a8](https://github.com/bigcommerce/checkout-js/commit/48ac1a840fdf9bf227458ee194742ab6cfe2bd5a))
+
+
+### Bug Fixes
+
+* **checkout:** add missing translation for multi shipping consignment ([#2281](https://github.com/bigcommerce/checkout-js/issues/2281)) ([eac33d1](https://github.com/bigcommerce/checkout-js/commit/eac33d1425bc048b5c13c172cd64184165b10f1b))
+* **checkout:** Update formik logic ([#2290](https://github.com/bigcommerce/checkout-js/issues/2290)) ([16c1176](https://github.com/bigcommerce/checkout-js/commit/16c11769a8de07d4c149dbcf2dfe627077dc2c7a))
+* **common:** fixed npm run release:alpha command run ([#2294](https://github.com/bigcommerce/checkout-js/issues/2294)) ([359baba](https://github.com/bigcommerce/checkout-js/commit/359babaa71a5f662c7517cfd469240c0b3e5fd47))
+* **payment:** bump checkout-sdk with amazonpay fix ([709b03b](https://github.com/bigcommerce/checkout-js/commit/709b03b87156f4f6bbb4105df85dbbb450ad01a8))
+* **payment:** STRIPE-725 Fix styling for custom hosted payment element ([30655fd](https://github.com/bigcommerce/checkout-js/commit/30655fdc1d9366fba4d92a491de1328a029a419d))
+
 ### [1.587.3](https://github.com/bigcommerce/checkout-js/compare/v1.587.2...v1.587.3) (2025-05-12)
 
 ### [1.587.2](https://github.com/bigcommerce/checkout-js/compare/v1.587.1...v1.587.2) (2025-05-08)
