@@ -13,6 +13,7 @@ const CheckoutButton: FunctionComponent<CheckoutButtonProps> = ({
     methodId,
     onUnhandledError,
     onWalletButtonClick,
+    additionalInitializationOptions = {},
 }) => {
     useEffect(() => {
         initializeCustomer({
@@ -21,6 +22,7 @@ const CheckoutButton: FunctionComponent<CheckoutButtonProps> = ({
                 container: containerId,
                 onUnhandledError,
                 onClick: () => onWalletButtonClick(methodId),
+                ...additionalInitializationOptions,
             },
         }).catch(onUnhandledError);
 
@@ -28,6 +30,7 @@ const CheckoutButton: FunctionComponent<CheckoutButtonProps> = ({
             deinitializeCustomer({ methodId }).catch(onUnhandledError);
         };
     }, [
+        additionalInitializationOptions,
         containerId,
         deinitializeCustomer,
         initializeCustomer,
